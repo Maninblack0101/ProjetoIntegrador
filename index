@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexus Games | Loja Gamer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <h1>🎮 NEXUS GAMES</h1>
+    <input id="busca" type="search"
+      placeholder="Buscar jogos...">
+    <button id="ver-carrinho">
+      🛒 Carrinho (<span id="quantidade">0</span>)
+    </button>
+  </header>
+
+  <main>
+    <section class="banner">
+      <p>LEVEL UP YOUR GAME</p>
+      <h2>SEU PRÓXIMO JOGO ESTÁ AQUI.</h2>
+      <p>Descubra aventuras incríveis e ofertas especiais.</p>
+      <a href="#catalogo" class="botao">Explorar jogos</a>
+    </section>
+
+    <section id="catalogo">
+      <h2>Jogos em destaque</h2>
+      <div id="categorias">
+        <button data-cat="Todos">Todos</button>
+        <button data-cat="Ação">Ação</button>
+        <button data-cat="RPG">RPG</button>
+        <button data-cat="Aventura">Aventura</button>
+        <button data-cat="Esportes">Esportes</button>
+        <button data-cat="Corrida">Corrida</button>
+      </div>
+      <div id="jogos" class="grade"></div>
+    </section>
+
+    <section id="carrinho" hidden>
+      <h2>Seu carrinho</h2>
+      <div id="itens-carrinho"></div>
+      <h3>Total: <span id="total">R$ 0,00</span></h3>
+      <button id="limpar">Limpar carrinho</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Nexus Games — Sua próxima aventura começa aqui.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
